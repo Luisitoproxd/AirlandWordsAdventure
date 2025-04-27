@@ -13,10 +13,24 @@ public class Codigo : MonoBehaviour
     public RectTransform objetoAnimado; 
     private Vector3 escalaInicial;
 
-
+    public Button sonido; 
+    public AudioClip sonidoClick;
+    private AudioSource audioSource;
 
     void Start()
     {
+        audioSource = gameObject.AddComponent<AudioSource>();
+        audioSource.playOnAwake = false;
+
+        if (sonido != null)
+        {
+            sonido.onClick.AddListener(ReproducirSonido);
+        }
+        else
+        {
+            Debug.LogWarning("No se ha asignado el botón 'sonido' en el inspector.");
+        }
+
        if (objetoAnimado != null)
         {
             escalaInicial = objetoAnimado.localScale;
@@ -43,5 +57,16 @@ public class Codigo : MonoBehaviour
         objetoAnimado.localScale = escalaInicial * escala;
     }
 
-   
+    void ReproducirSonido()
+    {
+        if (sonidoClick != null)
+        {
+            audioSource.PlayOneShot(sonidoClick);
+        }
+        else
+        {
+            Debug.LogWarning("No se ha asignado el sonidoClick en el inspector.");
+}
+}
+
 }
