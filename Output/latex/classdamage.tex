@@ -1,0 +1,50 @@
+\doxysection{damage Class Reference}
+\hypertarget{classdamage}{}\label{classdamage}\index{damage@{damage}}
+
+
+Script que detecta colisiones con el jugador y lo destruye al impactar.  
+
+
+
+
+Inheritance diagram for damage\+:
+% FIG 0
+
+
+Collaboration diagram for damage\+:
+% FIG 1
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classdamage_a9bcb48696f97f33f6018e8d2e9890e50}{On\+Collision\+Enter2D}} (Collision2D collision)
+\begin{DoxyCompactList}\small\item\em Método que se ejecuta automáticamente cuando otro objeto colisiona con este (en 2D). \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Script que detecta colisiones con el jugador y lo destruye al impactar. 
+
+\label{doc-func-members}
+\Hypertarget{classdamage_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classdamage_a9bcb48696f97f33f6018e8d2e9890e50}\index{damage@{damage}!OnCollisionEnter2D@{OnCollisionEnter2D}}
+\index{OnCollisionEnter2D@{OnCollisionEnter2D}!damage@{damage}}
+\doxysubsubsection{\texorpdfstring{OnCollisionEnter2D()}{OnCollisionEnter2D()}}
+{\footnotesize\ttfamily \label{classdamage_a9bcb48696f97f33f6018e8d2e9890e50} 
+void damage.\+On\+Collision\+Enter2D (\begin{DoxyParamCaption}\item[{Collision2D}]{collision}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Método que se ejecuta automáticamente cuando otro objeto colisiona con este (en 2D). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em collision} & Información sobre la colisión, incluyendo el objeto con el que se chocó.\\
+\hline
+\end{DoxyParams}
+
+
+Si el objeto con el que se colisiona tiene la etiqueta "{}\+Player"{}, se muestra un mensaje en consola y se destruye el objeto del jugador. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scripts/\mbox{\hyperlink{damage_8cs}{damage.\+cs}}\end{DoxyCompactItemize}

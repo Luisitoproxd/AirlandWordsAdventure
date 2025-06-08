@@ -1,0 +1,256 @@
+\doxysection{movement Class Reference}
+\hypertarget{classmovement}{}\label{classmovement}\index{movement@{movement}}
+
+
+Clase que controla el movimiento del personaje en 2D.  
+
+
+
+
+Inheritance diagram for movement\+:
+% FIG 0
+
+
+Collaboration diagram for movement\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classmovement_a761630882cf1663940a670b947a76a16}{Presionar\+Izquierda}} ()
+\begin{DoxyCompactList}\small\item\em Se llama cuando se presiona el botón táctil de movimiento hacia la izquierda. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classmovement_a6ca1dd5021f5cb91000ad46a23b5d836}{Soltar\+Izquierda}} ()
+\begin{DoxyCompactList}\small\item\em Se llama cuando se suelta el botón táctil de movimiento hacia la izquierda. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classmovement_a4c018de6f1c6feb5f2764379f5ec5d98}{Presionar\+Derecha}} ()
+\begin{DoxyCompactList}\small\item\em Se llama cuando se presiona el botón táctil de movimiento hacia la derecha. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classmovement_aa0c7aeb99644c9161990e109ac49cff6}{Soltar\+Derecha}} ()
+\begin{DoxyCompactList}\small\item\em Se llama cuando se suelta el botón táctil de movimiento hacia la derecha. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Animator \mbox{\hyperlink{classmovement_ac331b1814df70f55387b2c36f9e61c18}{animator}}
+\begin{DoxyCompactList}\small\item\em Referencia al componente Animator para controlar animaciones. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classmovement_a3f207f3c5926b025c3a3c7c38bfd346d}{run\+Speed}} = 5f
+\begin{DoxyCompactList}\small\item\em Velocidad de desplazamiento horizontal del personaje. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classmovement_a7b3e23957c717e7b754a279315791cce}{jump\+Force}} = 5f
+\begin{DoxyCompactList}\small\item\em Fuerza con la que el personaje salta. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classmovement_a67b4248165edb6faa3538c157a61d2bb}{Start}} ()
+\begin{DoxyCompactList}\small\item\em Inicializa referencias a componentes y congela la rotación del Rigidbody. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classmovement_ab14414bbc71e851a683110387f0ea5b0}{Update}} ()
+\begin{DoxyCompactList}\small\item\em Actualiza el estado del personaje en cada frame. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classmovement_a57543c7d10305bcc1166182eecb7348b}{On\+Collision\+Enter2D}} (Collision2D collision)
+\begin{DoxyCompactList}\small\item\em Detecta colisiones con el suelo para permitir el salto nuevamente. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classmovement_af86598d517e4e874ad9b4c4963b1dd7f}{Fixed\+Update}} ()
+\begin{DoxyCompactList}\small\item\em Aplica el movimiento físico del personaje usando la física de Unity. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{classmovement_a1eaf8d701f9844f3d64c25b6441ed009}{direccion}} = 0f
+\begin{DoxyCompactList}\small\item\em Dirección de movimiento establecida por los botones táctiles (-\/1 izquierda, 1 derecha, 0 neutro). \end{DoxyCompactList}\item 
+Rigidbody2D \mbox{\hyperlink{classmovement_a0698bab9c2be00c86740df016c70e5e3}{rb}}
+\begin{DoxyCompactList}\small\item\em Referencia al componente Rigidbody2D para manipular la física. \end{DoxyCompactList}\item 
+Sprite\+Renderer \mbox{\hyperlink{classmovement_a7c46909aa9aa2df848de7029f7b61e45}{sr}}
+\begin{DoxyCompactList}\small\item\em Referencia al Sprite\+Renderer para voltear el sprite. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classmovement_a1e85947a6e04bbf8ac5d93557613988e}{is\+Grounded}} = true
+\begin{DoxyCompactList}\small\item\em Indica si el personaje está tocando el suelo. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classmovement_acb634bf315ed1bb336aa2132ec1c2285}{boton\+Izquierda\+Presionado}} = false
+\begin{DoxyCompactList}\small\item\em Bandera para detectar si el botón izquierdo está presionado. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classmovement_a46149da716ecfb7c4aeaee24ee4ba135}{boton\+Derecha\+Presionado}} = false
+\begin{DoxyCompactList}\small\item\em Bandera para detectar si el botón derecho está presionado. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Clase que controla el movimiento del personaje en 2D. 
+
+Permite movimiento horizontal con teclado o botones táctiles, así como saltar solo cuando está en el suelo. 
+
+\label{doc-func-members}
+\Hypertarget{classmovement_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classmovement_af86598d517e4e874ad9b4c4963b1dd7f}\index{movement@{movement}!FixedUpdate@{FixedUpdate}}
+\index{FixedUpdate@{FixedUpdate}!movement@{movement}}
+\doxysubsubsection{\texorpdfstring{FixedUpdate()}{FixedUpdate()}}
+{\footnotesize\ttfamily \label{classmovement_af86598d517e4e874ad9b4c4963b1dd7f} 
+void movement.\+Fixed\+Update (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Aplica el movimiento físico del personaje usando la física de Unity. 
+
+\Hypertarget{classmovement_a57543c7d10305bcc1166182eecb7348b}\index{movement@{movement}!OnCollisionEnter2D@{OnCollisionEnter2D}}
+\index{OnCollisionEnter2D@{OnCollisionEnter2D}!movement@{movement}}
+\doxysubsubsection{\texorpdfstring{OnCollisionEnter2D()}{OnCollisionEnter2D()}}
+{\footnotesize\ttfamily \label{classmovement_a57543c7d10305bcc1166182eecb7348b} 
+void movement.\+On\+Collision\+Enter2D (\begin{DoxyParamCaption}\item[{Collision2D}]{collision}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Detecta colisiones con el suelo para permitir el salto nuevamente. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em collision} & Información sobre la colisión detectada.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{classmovement_a4c018de6f1c6feb5f2764379f5ec5d98}\index{movement@{movement}!PresionarDerecha@{PresionarDerecha}}
+\index{PresionarDerecha@{PresionarDerecha}!movement@{movement}}
+\doxysubsubsection{\texorpdfstring{PresionarDerecha()}{PresionarDerecha()}}
+{\footnotesize\ttfamily \label{classmovement_a4c018de6f1c6feb5f2764379f5ec5d98} 
+void movement.\+Presionar\+Derecha (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Se llama cuando se presiona el botón táctil de movimiento hacia la derecha. 
+
+\Hypertarget{classmovement_a761630882cf1663940a670b947a76a16}\index{movement@{movement}!PresionarIzquierda@{PresionarIzquierda}}
+\index{PresionarIzquierda@{PresionarIzquierda}!movement@{movement}}
+\doxysubsubsection{\texorpdfstring{PresionarIzquierda()}{PresionarIzquierda()}}
+{\footnotesize\ttfamily \label{classmovement_a761630882cf1663940a670b947a76a16} 
+void movement.\+Presionar\+Izquierda (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Se llama cuando se presiona el botón táctil de movimiento hacia la izquierda. 
+
+\Hypertarget{classmovement_aa0c7aeb99644c9161990e109ac49cff6}\index{movement@{movement}!SoltarDerecha@{SoltarDerecha}}
+\index{SoltarDerecha@{SoltarDerecha}!movement@{movement}}
+\doxysubsubsection{\texorpdfstring{SoltarDerecha()}{SoltarDerecha()}}
+{\footnotesize\ttfamily \label{classmovement_aa0c7aeb99644c9161990e109ac49cff6} 
+void movement.\+Soltar\+Derecha (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Se llama cuando se suelta el botón táctil de movimiento hacia la derecha. 
+
+\Hypertarget{classmovement_a6ca1dd5021f5cb91000ad46a23b5d836}\index{movement@{movement}!SoltarIzquierda@{SoltarIzquierda}}
+\index{SoltarIzquierda@{SoltarIzquierda}!movement@{movement}}
+\doxysubsubsection{\texorpdfstring{SoltarIzquierda()}{SoltarIzquierda()}}
+{\footnotesize\ttfamily \label{classmovement_a6ca1dd5021f5cb91000ad46a23b5d836} 
+void movement.\+Soltar\+Izquierda (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Se llama cuando se suelta el botón táctil de movimiento hacia la izquierda. 
+
+\Hypertarget{classmovement_a67b4248165edb6faa3538c157a61d2bb}\index{movement@{movement}!Start@{Start}}
+\index{Start@{Start}!movement@{movement}}
+\doxysubsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily \label{classmovement_a67b4248165edb6faa3538c157a61d2bb} 
+void movement.\+Start (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Inicializa referencias a componentes y congela la rotación del Rigidbody. 
+
+\Hypertarget{classmovement_ab14414bbc71e851a683110387f0ea5b0}\index{movement@{movement}!Update@{Update}}
+\index{Update@{Update}!movement@{movement}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily \label{classmovement_ab14414bbc71e851a683110387f0ea5b0} 
+void movement.\+Update (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Actualiza el estado del personaje en cada frame. 
+
+
+
+\label{doc-variable-members}
+\Hypertarget{classmovement_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classmovement_ac331b1814df70f55387b2c36f9e61c18}\index{movement@{movement}!animator@{animator}}
+\index{animator@{animator}!movement@{movement}}
+\doxysubsubsection{\texorpdfstring{animator}{animator}}
+{\footnotesize\ttfamily \label{classmovement_ac331b1814df70f55387b2c36f9e61c18} 
+Animator movement.\+animator}
+
+
+
+Referencia al componente Animator para controlar animaciones. 
+
+\Hypertarget{classmovement_a46149da716ecfb7c4aeaee24ee4ba135}\index{movement@{movement}!botonDerechaPresionado@{botonDerechaPresionado}}
+\index{botonDerechaPresionado@{botonDerechaPresionado}!movement@{movement}}
+\doxysubsubsection{\texorpdfstring{botonDerechaPresionado}{botonDerechaPresionado}}
+{\footnotesize\ttfamily \label{classmovement_a46149da716ecfb7c4aeaee24ee4ba135} 
+bool movement.\+boton\+Derecha\+Presionado = false\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Bandera para detectar si el botón derecho está presionado. 
+
+\Hypertarget{classmovement_acb634bf315ed1bb336aa2132ec1c2285}\index{movement@{movement}!botonIzquierdaPresionado@{botonIzquierdaPresionado}}
+\index{botonIzquierdaPresionado@{botonIzquierdaPresionado}!movement@{movement}}
+\doxysubsubsection{\texorpdfstring{botonIzquierdaPresionado}{botonIzquierdaPresionado}}
+{\footnotesize\ttfamily \label{classmovement_acb634bf315ed1bb336aa2132ec1c2285} 
+bool movement.\+boton\+Izquierda\+Presionado = false\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Bandera para detectar si el botón izquierdo está presionado. 
+
+\Hypertarget{classmovement_a1eaf8d701f9844f3d64c25b6441ed009}\index{movement@{movement}!direccion@{direccion}}
+\index{direccion@{direccion}!movement@{movement}}
+\doxysubsubsection{\texorpdfstring{direccion}{direccion}}
+{\footnotesize\ttfamily \label{classmovement_a1eaf8d701f9844f3d64c25b6441ed009} 
+float movement.\+direccion = 0f\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Dirección de movimiento establecida por los botones táctiles (-\/1 izquierda, 1 derecha, 0 neutro). 
+
+\Hypertarget{classmovement_a1e85947a6e04bbf8ac5d93557613988e}\index{movement@{movement}!isGrounded@{isGrounded}}
+\index{isGrounded@{isGrounded}!movement@{movement}}
+\doxysubsubsection{\texorpdfstring{isGrounded}{isGrounded}}
+{\footnotesize\ttfamily \label{classmovement_a1e85947a6e04bbf8ac5d93557613988e} 
+bool movement.\+is\+Grounded = true\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Indica si el personaje está tocando el suelo. 
+
+\Hypertarget{classmovement_a7b3e23957c717e7b754a279315791cce}\index{movement@{movement}!jumpForce@{jumpForce}}
+\index{jumpForce@{jumpForce}!movement@{movement}}
+\doxysubsubsection{\texorpdfstring{jumpForce}{jumpForce}}
+{\footnotesize\ttfamily \label{classmovement_a7b3e23957c717e7b754a279315791cce} 
+float movement.\+jump\+Force = 5f}
+
+
+
+Fuerza con la que el personaje salta. 
+
+\Hypertarget{classmovement_a0698bab9c2be00c86740df016c70e5e3}\index{movement@{movement}!rb@{rb}}
+\index{rb@{rb}!movement@{movement}}
+\doxysubsubsection{\texorpdfstring{rb}{rb}}
+{\footnotesize\ttfamily \label{classmovement_a0698bab9c2be00c86740df016c70e5e3} 
+Rigidbody2D movement.\+rb\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referencia al componente Rigidbody2D para manipular la física. 
+
+\Hypertarget{classmovement_a3f207f3c5926b025c3a3c7c38bfd346d}\index{movement@{movement}!runSpeed@{runSpeed}}
+\index{runSpeed@{runSpeed}!movement@{movement}}
+\doxysubsubsection{\texorpdfstring{runSpeed}{runSpeed}}
+{\footnotesize\ttfamily \label{classmovement_a3f207f3c5926b025c3a3c7c38bfd346d} 
+float movement.\+run\+Speed = 5f}
+
+
+
+Velocidad de desplazamiento horizontal del personaje. 
+
+\Hypertarget{classmovement_a7c46909aa9aa2df848de7029f7b61e45}\index{movement@{movement}!sr@{sr}}
+\index{sr@{sr}!movement@{movement}}
+\doxysubsubsection{\texorpdfstring{sr}{sr}}
+{\footnotesize\ttfamily \label{classmovement_a7c46909aa9aa2df848de7029f7b61e45} 
+Sprite\+Renderer movement.\+sr\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referencia al Sprite\+Renderer para voltear el sprite. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scripts/\mbox{\hyperlink{movement_8cs}{movement.\+cs}}\end{DoxyCompactItemize}

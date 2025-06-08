@@ -1,0 +1,140 @@
+\doxysection{chang Class Reference}
+\hypertarget{classchang}{}\label{classchang}\index{chang@{chang}}
+
+
+Controlador para el cambio de escenas con transiciones de fundido (fade).  
+
+
+
+
+Inheritance diagram for chang\+:
+% FIG 0
+
+
+Collaboration diagram for chang\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classchang_af18a379d2322403f6eb351e6ac4112f6}{Cambiar\+AEscena}} (string nombre\+Escena)
+\begin{DoxyCompactList}\small\item\em Cambia inmediatamente a una nueva escena especificada. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classchang_a083efcbbc8d04938fc67a7c52f19c4e9}{Salir\+De\+La\+Aplicacion}} ()
+\begin{DoxyCompactList}\small\item\em Cierra la aplicación. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Canvas\+Group \mbox{\hyperlink{classchang_a2377a01ff102d5ce7d45dfbe404aac43}{pantalla\+Negra}}
+\begin{DoxyCompactList}\small\item\em Referencia al Canvas\+Group utilizado para la transición de fundido. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classchang_a1637c16c3ec036d89603922e25bdc768}{Start}} ()
+\begin{DoxyCompactList}\small\item\em Método llamado al iniciar el script. Inicia el efecto de fundido de entrada. \end{DoxyCompactList}\item 
+IEnumerator \mbox{\hyperlink{classchang_a2f59be6f1c6b85eaac0eb3550a901142}{Fade\+In}} ()
+\begin{DoxyCompactList}\small\item\em Corrutina que realiza el efecto de fundido de entrada (pantalla negra a visible). \end{DoxyCompactList}\item 
+IEnumerator \mbox{\hyperlink{classchang_aabb59d14f616dad9ddab932fd6c516c5}{Fade\+Out}} (string escena)
+\begin{DoxyCompactList}\small\item\em Corrutina que realiza el efecto de fundido de salida (visible a pantalla negra) y cambia de escena. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Controlador para el cambio de escenas con transiciones de fundido (fade). 
+
+\label{doc-func-members}
+\Hypertarget{classchang_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classchang_af18a379d2322403f6eb351e6ac4112f6}\index{chang@{chang}!CambiarAEscena@{CambiarAEscena}}
+\index{CambiarAEscena@{CambiarAEscena}!chang@{chang}}
+\doxysubsubsection{\texorpdfstring{CambiarAEscena()}{CambiarAEscena()}}
+{\footnotesize\ttfamily \label{classchang_af18a379d2322403f6eb351e6ac4112f6} 
+void chang.\+Cambiar\+AEscena (\begin{DoxyParamCaption}\item[{string}]{nombre\+Escena}{}\end{DoxyParamCaption})}
+
+
+
+Cambia inmediatamente a una nueva escena especificada. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nombre\+Escena} & Nombre de la escena a cargar.\\
+\hline
+\end{DoxyParams}
+
+
+Esta transición no utiliza efecto de fundido. Para transiciones suaves, usar Fade\+Out. \Hypertarget{classchang_a2f59be6f1c6b85eaac0eb3550a901142}\index{chang@{chang}!FadeIn@{FadeIn}}
+\index{FadeIn@{FadeIn}!chang@{chang}}
+\doxysubsubsection{\texorpdfstring{FadeIn()}{FadeIn()}}
+{\footnotesize\ttfamily \label{classchang_a2f59be6f1c6b85eaac0eb3550a901142} 
+IEnumerator chang.\+Fade\+In (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Corrutina que realiza el efecto de fundido de entrada (pantalla negra a visible). 
+
+\begin{DoxyReturn}{Returns}
+IEnumerator para la corrutina.
+\end{DoxyReturn}
+
+
+Disminuye gradualmente la opacidad de la pantalla negra al iniciar la escena. Here is the caller graph for this function\+:
+% FIG 2
+\Hypertarget{classchang_aabb59d14f616dad9ddab932fd6c516c5}\index{chang@{chang}!FadeOut@{FadeOut}}
+\index{FadeOut@{FadeOut}!chang@{chang}}
+\doxysubsubsection{\texorpdfstring{FadeOut()}{FadeOut()}}
+{\footnotesize\ttfamily \label{classchang_aabb59d14f616dad9ddab932fd6c516c5} 
+IEnumerator chang.\+Fade\+Out (\begin{DoxyParamCaption}\item[{string}]{escena}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Corrutina que realiza el efecto de fundido de salida (visible a pantalla negra) y cambia de escena. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em escena} & Nombre de la escena a la que se cambiará una vez completado el fundido.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+IEnumerator para la corrutina.
+\end{DoxyReturn}
+
+
+Aumenta gradualmente la opacidad de la pantalla negra antes de cambiar de escena. \Hypertarget{classchang_a083efcbbc8d04938fc67a7c52f19c4e9}\index{chang@{chang}!SalirDeLaAplicacion@{SalirDeLaAplicacion}}
+\index{SalirDeLaAplicacion@{SalirDeLaAplicacion}!chang@{chang}}
+\doxysubsubsection{\texorpdfstring{SalirDeLaAplicacion()}{SalirDeLaAplicacion()}}
+{\footnotesize\ttfamily \label{classchang_a083efcbbc8d04938fc67a7c52f19c4e9} 
+void chang.\+Salir\+De\+La\+Aplicacion (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Cierra la aplicación. 
+
+Solo funcionará fuera del editor. En el editor, solo se mostrará un mensaje en consola. \Hypertarget{classchang_a1637c16c3ec036d89603922e25bdc768}\index{chang@{chang}!Start@{Start}}
+\index{Start@{Start}!chang@{chang}}
+\doxysubsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily \label{classchang_a1637c16c3ec036d89603922e25bdc768} 
+void chang.\+Start (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Método llamado al iniciar el script. Inicia el efecto de fundido de entrada. 
+
+Here is the call graph for this function\+:
+% FIG 3
+
+
+\label{doc-variable-members}
+\Hypertarget{classchang_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classchang_a2377a01ff102d5ce7d45dfbe404aac43}\index{chang@{chang}!pantallaNegra@{pantallaNegra}}
+\index{pantallaNegra@{pantallaNegra}!chang@{chang}}
+\doxysubsubsection{\texorpdfstring{pantallaNegra}{pantallaNegra}}
+{\footnotesize\ttfamily \label{classchang_a2377a01ff102d5ce7d45dfbe404aac43} 
+Canvas\+Group chang.\+pantalla\+Negra}
+
+
+
+Referencia al Canvas\+Group utilizado para la transición de fundido. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scripts/\mbox{\hyperlink{chang_8cs}{chang.\+cs}}\end{DoxyCompactItemize}

@@ -1,0 +1,94 @@
+\doxysection{Enemy Class Reference}
+\hypertarget{class_enemy}{}\label{class_enemy}\index{Enemy@{Enemy}}
+
+
+Controla la visualización de un panel UI cuando otro objeto entra en su zona de colisión (trigger).  
+
+
+
+
+Inheritance diagram for Enemy\+:
+% FIG 0
+
+
+Collaboration diagram for Enemy\+:
+% FIG 1
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Game\+Object \mbox{\hyperlink{class_enemy_a6e9bc7988f3d35607951970f8a4582eb}{panel\+UI}}
+\begin{DoxyCompactList}\small\item\em Panel de interfaz de usuario que se mostrará al activarse el trigger. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_enemy_aa4fd8949bbed81777741499e04380a74}{tiempo\+Visible}} = 3f
+\begin{DoxyCompactList}\small\item\em Tiempo (en segundos) durante el cual el panel UI permanecerá visible. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_enemy_a5957e491a4f9791b3bcf0ebf25a960a8}{On\+Trigger\+Enter2D}} (Collider2D collision)
+\begin{DoxyCompactList}\small\item\em Método llamado automáticamente cuando otro collider 2D entra en el área de trigger. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_enemy_ae72fc1a36c27d9766ee751ac4c048eb0}{Ocultar\+Panel}} ()
+\begin{DoxyCompactList}\small\item\em Oculta el panel UI. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Controla la visualización de un panel UI cuando otro objeto entra en su zona de colisión (trigger). 
+
+\label{doc-func-members}
+\Hypertarget{class_enemy_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_enemy_ae72fc1a36c27d9766ee751ac4c048eb0}\index{Enemy@{Enemy}!OcultarPanel@{OcultarPanel}}
+\index{OcultarPanel@{OcultarPanel}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{OcultarPanel()}{OcultarPanel()}}
+{\footnotesize\ttfamily \label{class_enemy_ae72fc1a36c27d9766ee751ac4c048eb0} 
+void Enemy.\+Ocultar\+Panel (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Oculta el panel UI. 
+
+Este método se llama automáticamente después del tiempo definido por {\ttfamily tiempo\+Visible}. \Hypertarget{class_enemy_a5957e491a4f9791b3bcf0ebf25a960a8}\index{Enemy@{Enemy}!OnTriggerEnter2D@{OnTriggerEnter2D}}
+\index{OnTriggerEnter2D@{OnTriggerEnter2D}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{OnTriggerEnter2D()}{OnTriggerEnter2D()}}
+{\footnotesize\ttfamily \label{class_enemy_a5957e491a4f9791b3bcf0ebf25a960a8} 
+void Enemy.\+On\+Trigger\+Enter2D (\begin{DoxyParamCaption}\item[{Collider2D}]{collision}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Método llamado automáticamente cuando otro collider 2D entra en el área de trigger. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em collision} & Collider del objeto que ha entrado en el trigger.\\
+\hline
+\end{DoxyParams}
+
+
+Activa el panel UI sin verificar etiquetas del objeto colisionador. Luego lo desactiva automáticamente después de un tiempo especificado. 
+
+\label{doc-variable-members}
+\Hypertarget{class_enemy_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_enemy_a6e9bc7988f3d35607951970f8a4582eb}\index{Enemy@{Enemy}!panelUI@{panelUI}}
+\index{panelUI@{panelUI}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{panelUI}{panelUI}}
+{\footnotesize\ttfamily \label{class_enemy_a6e9bc7988f3d35607951970f8a4582eb} 
+Game\+Object Enemy.\+panel\+UI}
+
+
+
+Panel de interfaz de usuario que se mostrará al activarse el trigger. 
+
+\Hypertarget{class_enemy_aa4fd8949bbed81777741499e04380a74}\index{Enemy@{Enemy}!tiempoVisible@{tiempoVisible}}
+\index{tiempoVisible@{tiempoVisible}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{tiempoVisible}{tiempoVisible}}
+{\footnotesize\ttfamily \label{class_enemy_aa4fd8949bbed81777741499e04380a74} 
+float Enemy.\+tiempo\+Visible = 3f}
+
+
+
+Tiempo (en segundos) durante el cual el panel UI permanecerá visible. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scripts/\mbox{\hyperlink{enemy_8cs}{enemy.\+cs}}\end{DoxyCompactItemize}

@@ -1,0 +1,90 @@
+\doxysection{Lokme Class Reference}
+\hypertarget{class_lokme}{}\label{class_lokme}\index{Lokme@{Lokme}}
+
+
+Hace que el objeto gire horizontalmente para mirar hacia la posición del jugador.  
+
+
+
+
+Inheritance diagram for Lokme\+:
+% FIG 0
+
+
+Collaboration diagram for Lokme\+:
+% FIG 1
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Transform \mbox{\hyperlink{class_lokme_af88dae14b7e345d8bf7733b5d7e686bd}{player}}
+\begin{DoxyCompactList}\small\item\em Referencia al transform del jugador. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_lokme_ab5a7b5e3e6d7b26975d56cf2e8393f2d}{Start}} ()
+\begin{DoxyCompactList}\small\item\em Inicializa las referencias necesarias al iniciar el juego. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_lokme_a9176590819906f374dbbea0522f4a7ef}{Update}} ()
+\begin{DoxyCompactList}\small\item\em Actualiza la dirección visual del sprite en función de la posición del jugador. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Sprite\+Renderer \mbox{\hyperlink{class_lokme_afd2383a91590cef30b04d56da3e75ef2}{sprite\+Renderer}}
+\begin{DoxyCompactList}\small\item\em Componente Sprite\+Renderer del objeto que se va a voltear horizontalmente. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Hace que el objeto gire horizontalmente para mirar hacia la posición del jugador. 
+
+\label{doc-func-members}
+\Hypertarget{class_lokme_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_lokme_ab5a7b5e3e6d7b26975d56cf2e8393f2d}\index{Lokme@{Lokme}!Start@{Start}}
+\index{Start@{Start}!Lokme@{Lokme}}
+\doxysubsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily \label{class_lokme_ab5a7b5e3e6d7b26975d56cf2e8393f2d} 
+void Lokme.\+Start (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Inicializa las referencias necesarias al iniciar el juego. 
+
+Obtiene el componente Sprite\+Renderer asociado al objeto actual. \Hypertarget{class_lokme_a9176590819906f374dbbea0522f4a7ef}\index{Lokme@{Lokme}!Update@{Update}}
+\index{Update@{Update}!Lokme@{Lokme}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily \label{class_lokme_a9176590819906f374dbbea0522f4a7ef} 
+void Lokme.\+Update (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Actualiza la dirección visual del sprite en función de la posición del jugador. 
+
+Si el jugador está a la izquierda del objeto, voltea el sprite hacia la izquierda; si está a la derecha, lo voltea hacia la derecha. 
+
+\label{doc-variable-members}
+\Hypertarget{class_lokme_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_lokme_af88dae14b7e345d8bf7733b5d7e686bd}\index{Lokme@{Lokme}!player@{player}}
+\index{player@{player}!Lokme@{Lokme}}
+\doxysubsubsection{\texorpdfstring{player}{player}}
+{\footnotesize\ttfamily \label{class_lokme_af88dae14b7e345d8bf7733b5d7e686bd} 
+Transform Lokme.\+player}
+
+
+
+Referencia al transform del jugador. 
+
+\Hypertarget{class_lokme_afd2383a91590cef30b04d56da3e75ef2}\index{Lokme@{Lokme}!spriteRenderer@{spriteRenderer}}
+\index{spriteRenderer@{spriteRenderer}!Lokme@{Lokme}}
+\doxysubsubsection{\texorpdfstring{spriteRenderer}{spriteRenderer}}
+{\footnotesize\ttfamily \label{class_lokme_afd2383a91590cef30b04d56da3e75ef2} 
+Sprite\+Renderer Lokme.\+sprite\+Renderer\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Componente Sprite\+Renderer del objeto que se va a voltear horizontalmente. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scripts/\mbox{\hyperlink{_lok_01me_8cs}{Lok me.\+cs}}\end{DoxyCompactItemize}

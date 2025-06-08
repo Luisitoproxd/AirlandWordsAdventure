@@ -1,0 +1,124 @@
+\doxysection{Music Class Reference}
+\hypertarget{class_music}{}\label{class_music}\index{Music@{Music}}
+
+
+Controla la reproducción de música de fondo persistente entre escenas usando el patrón Singleton.  
+
+
+
+
+Inheritance diagram for Music\+:
+% FIG 0
+
+
+Collaboration diagram for Music\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_music_ad1b0171edb45a57dcc13a66a493439fc}{Detener\+Musica}} ()
+\begin{DoxyCompactList}\small\item\em Pausa la reproducción de la música actual. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_music_aba4cb71a5bbf36e9f416693cbc537477}{Playmusic}} ()
+\begin{DoxyCompactList}\small\item\em Reanuda la reproducción de la música si está pausada. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Audio\+Clip \mbox{\hyperlink{class_music_a2974a36094f545b37753c81439e1ef6f}{musica}}
+\begin{DoxyCompactList}\small\item\em Clip de audio que se reproducirá como música de fondo. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_music}{Music}} \mbox{\hyperlink{class_music_ad5d8c134daac6ea4283c29ed50b0f6ba}{instancia}}
+\begin{DoxyCompactList}\small\item\em Instancia única del objeto \doxylink{class_music}{Music} para implementar el patrón Singleton. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_music_a933c387f742ffaadaf21e77981c697d8}{Awake}} ()
+\begin{DoxyCompactList}\small\item\em Método llamado cuando la instancia se activa por primera vez, incluso antes de Start. Se asegura de que solo haya una instancia persistente del objeto. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Audio\+Source \mbox{\hyperlink{class_music_ad7980e82c9bb7fc27ce15affbc4ef267}{audio\+Source}}
+\begin{DoxyCompactList}\small\item\em Componente Audio\+Source que reproduce el clip de música. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Controla la reproducción de música de fondo persistente entre escenas usando el patrón Singleton. 
+
+\label{doc-func-members}
+\Hypertarget{class_music_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_music_a933c387f742ffaadaf21e77981c697d8}\index{Music@{Music}!Awake@{Awake}}
+\index{Awake@{Awake}!Music@{Music}}
+\doxysubsubsection{\texorpdfstring{Awake()}{Awake()}}
+{\footnotesize\ttfamily \label{class_music_a933c387f742ffaadaf21e77981c697d8} 
+void Music.\+Awake (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Método llamado cuando la instancia se activa por primera vez, incluso antes de Start. Se asegura de que solo haya una instancia persistente del objeto. 
+
+Si ya existe una instancia, se destruye la nueva. Si no, se configura como persistente entre escenas y comienza la reproducción del clip asignado. \Hypertarget{class_music_ad1b0171edb45a57dcc13a66a493439fc}\index{Music@{Music}!DetenerMusica@{DetenerMusica}}
+\index{DetenerMusica@{DetenerMusica}!Music@{Music}}
+\doxysubsubsection{\texorpdfstring{DetenerMusica()}{DetenerMusica()}}
+{\footnotesize\ttfamily \label{class_music_ad1b0171edb45a57dcc13a66a493439fc} 
+void Music.\+Detener\+Musica (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Pausa la reproducción de la música actual. 
+
+Útil para mutear la música sin detener completamente la aplicación. Here is the caller graph for this function\+:
+% FIG 2
+\Hypertarget{class_music_aba4cb71a5bbf36e9f416693cbc537477}\index{Music@{Music}!Playmusic@{Playmusic}}
+\index{Playmusic@{Playmusic}!Music@{Music}}
+\doxysubsubsection{\texorpdfstring{Playmusic()}{Playmusic()}}
+{\footnotesize\ttfamily \label{class_music_aba4cb71a5bbf36e9f416693cbc537477} 
+void Music.\+Playmusic (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Reanuda la reproducción de la música si está pausada. 
+
+Solo tiene efecto si la música fue pausada previamente. Here is the caller graph for this function\+:
+% FIG 3
+
+
+\label{doc-variable-members}
+\Hypertarget{class_music_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_music_ad7980e82c9bb7fc27ce15affbc4ef267}\index{Music@{Music}!audioSource@{audioSource}}
+\index{audioSource@{audioSource}!Music@{Music}}
+\doxysubsubsection{\texorpdfstring{audioSource}{audioSource}}
+{\footnotesize\ttfamily \label{class_music_ad7980e82c9bb7fc27ce15affbc4ef267} 
+Audio\+Source Music.\+audio\+Source\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Componente Audio\+Source que reproduce el clip de música. 
+
+\Hypertarget{class_music_ad5d8c134daac6ea4283c29ed50b0f6ba}\index{Music@{Music}!instancia@{instancia}}
+\index{instancia@{instancia}!Music@{Music}}
+\doxysubsubsection{\texorpdfstring{instancia}{instancia}}
+{\footnotesize\ttfamily \label{class_music_ad5d8c134daac6ea4283c29ed50b0f6ba} 
+\mbox{\hyperlink{class_music}{Music}} Music.\+instancia\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Instancia única del objeto \doxylink{class_music}{Music} para implementar el patrón Singleton. 
+
+\Hypertarget{class_music_a2974a36094f545b37753c81439e1ef6f}\index{Music@{Music}!musica@{musica}}
+\index{musica@{musica}!Music@{Music}}
+\doxysubsubsection{\texorpdfstring{musica}{musica}}
+{\footnotesize\ttfamily \label{class_music_a2974a36094f545b37753c81439e1ef6f} 
+Audio\+Clip Music.\+musica}
+
+
+
+Clip de audio que se reproducirá como música de fondo. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scripts/\mbox{\hyperlink{_music_8cs}{Music.\+cs}}\end{DoxyCompactItemize}

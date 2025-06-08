@@ -1,0 +1,70 @@
+\doxysection{Triggdoor Class Reference}
+\hypertarget{class_triggdoor}{}\label{class_triggdoor}\index{Triggdoor@{Triggdoor}}
+
+
+Cambia a una nueva escena cuando cualquier objeto entra en el área de colisión (trigger).  
+
+
+
+
+Inheritance diagram for Triggdoor\+:
+% FIG 0
+
+
+Collaboration diagram for Triggdoor\+:
+% FIG 1
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_triggdoor_a55c8053a0a3afae284442d711fb8f178}{nombre\+Escena\+ACargar}}
+\begin{DoxyCompactList}\small\item\em Nombre de la escena que se cargará cuando se active el trigger. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_triggdoor_ad79d1ca8884539f0e3437315218b522c}{On\+Trigger\+Enter2D}} (Collider2D other)
+\begin{DoxyCompactList}\small\item\em Se ejecuta cuando otro collider entra en el área del trigger. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Cambia a una nueva escena cuando cualquier objeto entra en el área de colisión (trigger). 
+
+Este script debe estar en un Game\+Object con un Collider2D marcado como trigger. Carga la escena cuyo nombre se indique en el Inspector. 
+
+\label{doc-func-members}
+\Hypertarget{class_triggdoor_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_triggdoor_ad79d1ca8884539f0e3437315218b522c}\index{Triggdoor@{Triggdoor}!OnTriggerEnter2D@{OnTriggerEnter2D}}
+\index{OnTriggerEnter2D@{OnTriggerEnter2D}!Triggdoor@{Triggdoor}}
+\doxysubsubsection{\texorpdfstring{OnTriggerEnter2D()}{OnTriggerEnter2D()}}
+{\footnotesize\ttfamily \label{class_triggdoor_ad79d1ca8884539f0e3437315218b522c} 
+void Triggdoor.\+On\+Trigger\+Enter2D (\begin{DoxyParamCaption}\item[{Collider2D}]{other}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Se ejecuta cuando otro collider entra en el área del trigger. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & El Collider2D del objeto que entró en el trigger.\\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-variable-members}
+\Hypertarget{class_triggdoor_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_triggdoor_a55c8053a0a3afae284442d711fb8f178}\index{Triggdoor@{Triggdoor}!nombreEscenaACargar@{nombreEscenaACargar}}
+\index{nombreEscenaACargar@{nombreEscenaACargar}!Triggdoor@{Triggdoor}}
+\doxysubsubsection{\texorpdfstring{nombreEscenaACargar}{nombreEscenaACargar}}
+{\footnotesize\ttfamily \label{class_triggdoor_a55c8053a0a3afae284442d711fb8f178} 
+string Triggdoor.\+nombre\+Escena\+ACargar}
+
+
+
+Nombre de la escena que se cargará cuando se active el trigger. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scripts/\mbox{\hyperlink{_trigg_01door_8cs}{Trigg door.\+cs}}\end{DoxyCompactItemize}

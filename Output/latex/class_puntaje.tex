@@ -1,0 +1,109 @@
+\doxysection{Puntaje Class Reference}
+\hypertarget{class_puntaje}{}\label{class_puntaje}\index{Puntaje@{Puntaje}}
+
+
+Controla y muestra el puntaje acumulado durante el juego.  
+
+
+
+
+Inheritance diagram for Puntaje\+:
+% FIG 0
+
+
+Collaboration diagram for Puntaje\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_puntaje_aee0bf6d7a7b8b52e7e79708bca75260b}{Sumar\+Puntos}} (float puntos\+Entrada)
+\begin{DoxyCompactList}\small\item\em Suma una cantidad específica de puntos al total actual. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_puntaje_a5dab8b3dd822daa611285e3778baa8f7}{Start}} ()
+\begin{DoxyCompactList}\small\item\em Inicializa la referencia al componente Text\+Mesh\+Pro\+UGUI. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_puntaje_a27c1b861b7b23f494e629b844cce0fd5}{Update}} ()
+\begin{DoxyCompactList}\small\item\em Aumenta el puntaje automáticamente con el tiempo y actualiza el texto en pantalla. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{class_puntaje_a4e87b3cdebd6eaaf97cda39e3718965e}{puntos}}
+\begin{DoxyCompactList}\small\item\em \doxylink{class_puntaje}{Puntaje} acumulado del jugador. \end{DoxyCompactList}\item 
+Text\+Mesh\+Pro\+UGUI \mbox{\hyperlink{class_puntaje_ac8e709721e649841637a3b27ab33183d}{tex}}
+\begin{DoxyCompactList}\small\item\em Referencia al componente Text\+Mesh\+Pro\+UGUI donde se mostrará el puntaje. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Controla y muestra el puntaje acumulado durante el juego. 
+
+El puntaje se incrementa automáticamente con el tiempo y puede aumentarse manualmente. 
+
+\label{doc-func-members}
+\Hypertarget{class_puntaje_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_puntaje_a5dab8b3dd822daa611285e3778baa8f7}\index{Puntaje@{Puntaje}!Start@{Start}}
+\index{Start@{Start}!Puntaje@{Puntaje}}
+\doxysubsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily \label{class_puntaje_a5dab8b3dd822daa611285e3778baa8f7} 
+void Puntaje.\+Start (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Inicializa la referencia al componente Text\+Mesh\+Pro\+UGUI. 
+
+\Hypertarget{class_puntaje_aee0bf6d7a7b8b52e7e79708bca75260b}\index{Puntaje@{Puntaje}!SumarPuntos@{SumarPuntos}}
+\index{SumarPuntos@{SumarPuntos}!Puntaje@{Puntaje}}
+\doxysubsubsection{\texorpdfstring{SumarPuntos()}{SumarPuntos()}}
+{\footnotesize\ttfamily \label{class_puntaje_aee0bf6d7a7b8b52e7e79708bca75260b} 
+void Puntaje.\+Sumar\+Puntos (\begin{DoxyParamCaption}\item[{float}]{puntos\+Entrada}{}\end{DoxyParamCaption})}
+
+
+
+Suma una cantidad específica de puntos al total actual. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em puntos\+Entrada} & Cantidad de puntos a sumar (decimal).\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_puntaje_a27c1b861b7b23f494e629b844cce0fd5}\index{Puntaje@{Puntaje}!Update@{Update}}
+\index{Update@{Update}!Puntaje@{Puntaje}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily \label{class_puntaje_a27c1b861b7b23f494e629b844cce0fd5} 
+void Puntaje.\+Update (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Aumenta el puntaje automáticamente con el tiempo y actualiza el texto en pantalla. 
+
+
+
+\label{doc-variable-members}
+\Hypertarget{class_puntaje_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_puntaje_a4e87b3cdebd6eaaf97cda39e3718965e}\index{Puntaje@{Puntaje}!puntos@{puntos}}
+\index{puntos@{puntos}!Puntaje@{Puntaje}}
+\doxysubsubsection{\texorpdfstring{puntos}{puntos}}
+{\footnotesize\ttfamily \label{class_puntaje_a4e87b3cdebd6eaaf97cda39e3718965e} 
+float Puntaje.\+puntos\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\doxylink{class_puntaje}{Puntaje} acumulado del jugador. 
+
+\Hypertarget{class_puntaje_ac8e709721e649841637a3b27ab33183d}\index{Puntaje@{Puntaje}!tex@{tex}}
+\index{tex@{tex}!Puntaje@{Puntaje}}
+\doxysubsubsection{\texorpdfstring{tex}{tex}}
+{\footnotesize\ttfamily \label{class_puntaje_ac8e709721e649841637a3b27ab33183d} 
+Text\+Mesh\+Pro\+UGUI Puntaje.\+tex\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Referencia al componente Text\+Mesh\+Pro\+UGUI donde se mostrará el puntaje. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scripts/\mbox{\hyperlink{_puntaje_8cs}{Puntaje.\+cs}}\end{DoxyCompactItemize}

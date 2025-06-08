@@ -1,0 +1,190 @@
+\doxysection{Codigo Class Reference}
+\hypertarget{class_codigo}{}\label{class_codigo}\index{Codigo@{Codigo}}
+
+
+Controla una animación de rotación y escalado sobre un objeto, además de reproducir un sonido al presionar un botón.  
+
+
+
+
+Inheritance diagram for Codigo\+:
+% FIG 0
+
+
+Collaboration diagram for Codigo\+:
+% FIG 1
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{class_codigo_a872c983483bb76d86b3f44e9c199c42b}{velocidad}} = 2f
+\begin{DoxyCompactList}\small\item\em Velocidad de la animación. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_codigo_a82a44e5471f1ff7386f7118de33a1aa7}{amplitud\+Rotacion}} = 5f
+\begin{DoxyCompactList}\small\item\em Amplitud de la rotación en grados. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_codigo_a1418dcf151ddca098f5c20aba4fa5e95}{escala\+Min}} = 0.\+95f
+\begin{DoxyCompactList}\small\item\em Escala mínima del objeto animado. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_codigo_a30e93785e2101f1dfcc7e5105aa5d2df}{escala\+Max}} = 1.\+05f
+\begin{DoxyCompactList}\small\item\em Escala máxima del objeto animado. \end{DoxyCompactList}\item 
+Transform \mbox{\hyperlink{class_codigo_a4c9ea29ffd7b54dbaa9d9aef03ad95cc}{objeto\+Animado}}
+\begin{DoxyCompactList}\small\item\em Transform del objeto que será animado. \end{DoxyCompactList}\item 
+Button \mbox{\hyperlink{class_codigo_aaecfc8c5bd7d0889b38f75d08f78d139}{boton}}
+\begin{DoxyCompactList}\small\item\em Referencia al botón de UI que reproducirá un sonido al ser presionado. \end{DoxyCompactList}\item 
+Audio\+Clip \mbox{\hyperlink{class_codigo_a286fd7b8a49c4d5b52be11527cde8792}{sonido\+Click}}
+\begin{DoxyCompactList}\small\item\em Clip de sonido que se reproducirá al hacer clic en el botón. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_codigo_a38e51ed60b24979fb71bd9724f4367db}{Start}} ()
+\begin{DoxyCompactList}\small\item\em Inicializa componentes y registra eventos. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_codigo_abe34f181a23c3e25f5ad0677d6383327}{Update}} ()
+\begin{DoxyCompactList}\small\item\em Actualiza la animación del objeto cada frame. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_codigo_a2615fa27f2b17e378fe21446a92da373}{Reproducir\+Sonido}} ()
+\begin{DoxyCompactList}\small\item\em Reproduce el sonido de clic si el clip está asignado. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Vector3 \mbox{\hyperlink{class_codigo_a9f70e93880bb77fe53bab0ac6ed952f3}{escala\+Inicial}}
+\begin{DoxyCompactList}\small\item\em Escala original del objeto al iniciar. \end{DoxyCompactList}\item 
+Audio\+Source \mbox{\hyperlink{class_codigo_aad65aa6f2256869a4b158de3518e1573}{audio\+Source}}
+\begin{DoxyCompactList}\small\item\em Componente de Audio\+Source utilizado para reproducir el sonido. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Controla una animación de rotación y escalado sobre un objeto, además de reproducir un sonido al presionar un botón. 
+
+\label{doc-func-members}
+\Hypertarget{class_codigo_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_codigo_a2615fa27f2b17e378fe21446a92da373}\index{Codigo@{Codigo}!ReproducirSonido@{ReproducirSonido}}
+\index{ReproducirSonido@{ReproducirSonido}!Codigo@{Codigo}}
+\doxysubsubsection{\texorpdfstring{ReproducirSonido()}{ReproducirSonido()}}
+{\footnotesize\ttfamily \label{class_codigo_a2615fa27f2b17e378fe21446a92da373} 
+void Codigo.\+Reproducir\+Sonido (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Reproduce el sonido de clic si el clip está asignado. 
+
+Este método se llama al presionar el botón asignado. Here is the caller graph for this function\+:
+% FIG 2
+\Hypertarget{class_codigo_a38e51ed60b24979fb71bd9724f4367db}\index{Codigo@{Codigo}!Start@{Start}}
+\index{Start@{Start}!Codigo@{Codigo}}
+\doxysubsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily \label{class_codigo_a38e51ed60b24979fb71bd9724f4367db} 
+void Codigo.\+Start (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Inicializa componentes y registra eventos. 
+
+Here is the call graph for this function\+:
+% FIG 3
+\Hypertarget{class_codigo_abe34f181a23c3e25f5ad0677d6383327}\index{Codigo@{Codigo}!Update@{Update}}
+\index{Update@{Update}!Codigo@{Codigo}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily \label{class_codigo_abe34f181a23c3e25f5ad0677d6383327} 
+void Codigo.\+Update (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Actualiza la animación del objeto cada frame. 
+
+Aplica una rotación oscilatoria y cambio de escala al objeto animado. 
+
+\label{doc-variable-members}
+\Hypertarget{class_codigo_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_codigo_a82a44e5471f1ff7386f7118de33a1aa7}\index{Codigo@{Codigo}!amplitudRotacion@{amplitudRotacion}}
+\index{amplitudRotacion@{amplitudRotacion}!Codigo@{Codigo}}
+\doxysubsubsection{\texorpdfstring{amplitudRotacion}{amplitudRotacion}}
+{\footnotesize\ttfamily \label{class_codigo_a82a44e5471f1ff7386f7118de33a1aa7} 
+float Codigo.\+amplitud\+Rotacion = 5f}
+
+
+
+Amplitud de la rotación en grados. 
+
+\Hypertarget{class_codigo_aad65aa6f2256869a4b158de3518e1573}\index{Codigo@{Codigo}!audioSource@{audioSource}}
+\index{audioSource@{audioSource}!Codigo@{Codigo}}
+\doxysubsubsection{\texorpdfstring{audioSource}{audioSource}}
+{\footnotesize\ttfamily \label{class_codigo_aad65aa6f2256869a4b158de3518e1573} 
+Audio\+Source Codigo.\+audio\+Source\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Componente de Audio\+Source utilizado para reproducir el sonido. 
+
+\Hypertarget{class_codigo_aaecfc8c5bd7d0889b38f75d08f78d139}\index{Codigo@{Codigo}!boton@{boton}}
+\index{boton@{boton}!Codigo@{Codigo}}
+\doxysubsubsection{\texorpdfstring{boton}{boton}}
+{\footnotesize\ttfamily \label{class_codigo_aaecfc8c5bd7d0889b38f75d08f78d139} 
+Button Codigo.\+boton}
+
+
+
+Referencia al botón de UI que reproducirá un sonido al ser presionado. 
+
+\Hypertarget{class_codigo_a9f70e93880bb77fe53bab0ac6ed952f3}\index{Codigo@{Codigo}!escalaInicial@{escalaInicial}}
+\index{escalaInicial@{escalaInicial}!Codigo@{Codigo}}
+\doxysubsubsection{\texorpdfstring{escalaInicial}{escalaInicial}}
+{\footnotesize\ttfamily \label{class_codigo_a9f70e93880bb77fe53bab0ac6ed952f3} 
+Vector3 Codigo.\+escala\+Inicial\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Escala original del objeto al iniciar. 
+
+\Hypertarget{class_codigo_a30e93785e2101f1dfcc7e5105aa5d2df}\index{Codigo@{Codigo}!escalaMax@{escalaMax}}
+\index{escalaMax@{escalaMax}!Codigo@{Codigo}}
+\doxysubsubsection{\texorpdfstring{escalaMax}{escalaMax}}
+{\footnotesize\ttfamily \label{class_codigo_a30e93785e2101f1dfcc7e5105aa5d2df} 
+float Codigo.\+escala\+Max = 1.\+05f}
+
+
+
+Escala máxima del objeto animado. 
+
+\Hypertarget{class_codigo_a1418dcf151ddca098f5c20aba4fa5e95}\index{Codigo@{Codigo}!escalaMin@{escalaMin}}
+\index{escalaMin@{escalaMin}!Codigo@{Codigo}}
+\doxysubsubsection{\texorpdfstring{escalaMin}{escalaMin}}
+{\footnotesize\ttfamily \label{class_codigo_a1418dcf151ddca098f5c20aba4fa5e95} 
+float Codigo.\+escala\+Min = 0.\+95f}
+
+
+
+Escala mínima del objeto animado. 
+
+\Hypertarget{class_codigo_a4c9ea29ffd7b54dbaa9d9aef03ad95cc}\index{Codigo@{Codigo}!objetoAnimado@{objetoAnimado}}
+\index{objetoAnimado@{objetoAnimado}!Codigo@{Codigo}}
+\doxysubsubsection{\texorpdfstring{objetoAnimado}{objetoAnimado}}
+{\footnotesize\ttfamily \label{class_codigo_a4c9ea29ffd7b54dbaa9d9aef03ad95cc} 
+Transform Codigo.\+objeto\+Animado}
+
+
+
+Transform del objeto que será animado. 
+
+\Hypertarget{class_codigo_a286fd7b8a49c4d5b52be11527cde8792}\index{Codigo@{Codigo}!sonidoClick@{sonidoClick}}
+\index{sonidoClick@{sonidoClick}!Codigo@{Codigo}}
+\doxysubsubsection{\texorpdfstring{sonidoClick}{sonidoClick}}
+{\footnotesize\ttfamily \label{class_codigo_a286fd7b8a49c4d5b52be11527cde8792} 
+Audio\+Clip Codigo.\+sonido\+Click}
+
+
+
+Clip de sonido que se reproducirá al hacer clic en el botón. 
+
+\Hypertarget{class_codigo_a872c983483bb76d86b3f44e9c199c42b}\index{Codigo@{Codigo}!velocidad@{velocidad}}
+\index{velocidad@{velocidad}!Codigo@{Codigo}}
+\doxysubsubsection{\texorpdfstring{velocidad}{velocidad}}
+{\footnotesize\ttfamily \label{class_codigo_a872c983483bb76d86b3f44e9c199c42b} 
+float Codigo.\+velocidad = 2f}
+
+
+
+Velocidad de la animación. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Scripts/\mbox{\hyperlink{_codigo_8cs}{Codigo.\+cs}}\end{DoxyCompactItemize}
