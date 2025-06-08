@@ -1,28 +1,21 @@
-using System.Collections;
-using System.Collections.Generic;
-using Microsoft.Unity.VisualStudio.Editor;
 using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    public GameObject panelUI; 
-     public GameObject player;
+ public GameObject panelUI;          // Panel que se mostrará
+    public float tiempoVisible = 3f;    // Tiempo que estará visible
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player"))
-        {
-            panelUI.SetActive(true);     
-            Time.timeScale = 0f;         
-        }
+        // Mostrar el panel sin comparar ningún tag
+        panelUI.SetActive(true);
+
+        // Ocultarlo después de cierto tiempo
+        Invoke("OcultarPanel", tiempoVisible);
     }
 
- 
-    public void ReanudarJuego()
+    private void OcultarPanel()
     {
-        panelUI.SetActive(false);     
-        Time.timeScale = 1f;           
-        player.SetActive(false); 
-       
+        panelUI.SetActive(false);
     }
 }

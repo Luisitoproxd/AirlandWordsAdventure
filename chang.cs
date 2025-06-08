@@ -27,8 +27,8 @@ public class chang : MonoBehaviour
         }
         pantallaNegra.blocksRaycasts = false;
     }
-    
-        IEnumerator FadeOut(string escena)
+
+    IEnumerator FadeOut(string escena)
     {
         pantallaNegra.blocksRaycasts = true;
         while (pantallaNegra.alpha < 1)
@@ -37,5 +37,10 @@ public class chang : MonoBehaviour
             yield return null;
         }
         SceneManager.LoadScene(escena);
+    }
+    public void SalirDeLaAplicacion()
+    {
+        Debug.Log("Saliendo de la aplicación...");
+        Application.Quit();
     }
 }

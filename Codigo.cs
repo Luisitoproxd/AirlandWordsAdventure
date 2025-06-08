@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Codigo : MonoBehaviour
 {
@@ -10,10 +11,10 @@ public class Codigo : MonoBehaviour
     public float escalaMin = 0.95f;
     public float escalaMax = 1.05f;
 
-    public RectTransform objetoAnimado; 
+    public Transform objetoAnimado; 
     private Vector3 escalaInicial;
 
-    public Button sonido; 
+    public Button boton; 
     public AudioClip sonidoClick;
     private AudioSource audioSource;
 
@@ -22,22 +23,15 @@ public class Codigo : MonoBehaviour
         audioSource = gameObject.AddComponent<AudioSource>();
         audioSource.playOnAwake = false;
 
-        if (sonido != null)
+        if (boton != null)
         {
-            sonido.onClick.AddListener(ReproducirSonido);
+            boton.onClick.AddListener(ReproducirSonido);
         }
-        else
-        {
-            Debug.LogWarning("No se ha asignado el botón 'sonido' en el inspector.");
-        }
+
 
        if (objetoAnimado != null)
         {
             escalaInicial = objetoAnimado.localScale;
-        }
-        else
-        {
-            Debug.LogWarning("No se ha asignado el objetoAnimado en el inspector.");
         }
 
     }
@@ -63,10 +57,6 @@ public class Codigo : MonoBehaviour
         {
             audioSource.PlayOneShot(sonidoClick);
         }
-        else
-        {
-            Debug.LogWarning("No se ha asignado el sonidoClick en el inspector.");
-}
 }
 
 }
