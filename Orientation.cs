@@ -23,7 +23,7 @@ public class ForzarOrientacionPorEscena : MonoBehaviour
 
     private bool EsEscenaHorizontal(string nombreEscena)
     {
-        foreach (string escena in escenasHorizontales)
+            foreach (string escena in escenasHorizontales)
         {
             if (escena == nombreEscena)
                 return true;

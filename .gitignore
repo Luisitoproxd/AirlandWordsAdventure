@@ -1,0 +1,6 @@
+*.csproj
+*.sln
+.DS_Store
+bin/
+obj/
+*.meta

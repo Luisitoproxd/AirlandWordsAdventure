@@ -15,13 +15,18 @@ public class Music1 : MonoBehaviour
     {
 
     }
-
+    /// <summary>
+    ///  Metodo para detener la musica
+    /// </summary>
     public void Detener()
     {
         Music.instancia.DetenerMusica();
     }
 
-        public void play()
+    /// <summary>
+    ///  reanudar la musica
+    /// </summary>
+    public void play()
     {
         Music.instancia.Playmusic();
     }
