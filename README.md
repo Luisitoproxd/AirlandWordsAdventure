@@ -111,12 +111,7 @@ Asegúrate de no haberla desactivado desde la configuración.
 
 ---
 
-## Datos de Contacto / Soporte Técnico
-
-**Correo electrónico:** contacto@educajuego.com  
-**Sitio web:** [www.educajuego.com](http://www.educajuego.com)  
-**Soporte:** disponible mediante la institución educativa
-
+Página html file:///C:/Users/User/AirlandWordsAdventure/Assets/Script/Output/html/classchang.html#details
 ---
 
 > Este proyecto fue desarrollado con fines educativos para apoyar el aprendizaje de la ortografía y comprensión lectora de estudiantes de educación básica.
