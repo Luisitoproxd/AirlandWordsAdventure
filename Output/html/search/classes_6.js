@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['puntaje_0',['Puntaje',['../class_puntaje.html',1,'']]]
+  ['quit_0',['Quit',['../class_quit.html',1,'']]]
 ];

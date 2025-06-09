@@ -8,7 +8,6 @@ var dir_4edcbb236dfd51dd81727243a38df6a0 =
     [ "movement.cs", "movement_8cs.html", "movement_8cs" ],
     [ "Music.cs", "_music_8cs.html", "_music_8cs" ],
     [ "Music1.cs", "_music1_8cs.html", "_music1_8cs" ],
-    [ "Orientation.cs", "_orientation_8cs.html", "_orientation_8cs" ],
     [ "Puntaje.cs", "_puntaje_8cs.html", "_puntaje_8cs" ],
     [ "Quit.cs", "_quit_8cs.html", "_quit_8cs" ],
     [ "splash c.cs", "splash_01c_8cs.html", "splash_01c_8cs" ],

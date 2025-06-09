@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['inicial_0',['Instalación o Preparación Inicial',['../C:/Users/User/AirlandWordsAdventure/Assets/Script/Scripts/README.md#autotoc_md11',1,'']]],
-  ['instalación_20o_20preparación_20inicial_1',['Instalación o Preparación Inicial',['../C:/Users/User/AirlandWordsAdventure/Assets/Script/Scripts/README.md#autotoc_md11',1,'']]],
-  ['introducción_2',['Introducción',['../C:/Users/User/AirlandWordsAdventure/Assets/Script/Scripts/README.md#autotoc_md4',1,'']]]
+  ['html_20classchang_20html_20details_0',['Página html &lt;a href=&quot;file:///C:/Users/User/AirlandWordsAdventure/Assets/Script/Output/html/classchang.html#details&quot;&gt;file:///C:/Users/User/AirlandWordsAdventure/Assets/Script/Output/html/classchang.html#details&lt;/a&gt;',['../C:/Users/User/AirlandWordsAdventure/Assets/Script/Scripts/README.md#autotoc_md23',1,'']]],
+  ['html_20details_1',['Página html &lt;a href=&quot;file:///C:/Users/User/AirlandWordsAdventure/Assets/Script/Output/html/classchang.html#details&quot;&gt;file:///C:/Users/User/AirlandWordsAdventure/Assets/Script/Output/html/classchang.html#details&lt;/a&gt;',['../C:/Users/User/AirlandWordsAdventure/Assets/Script/Scripts/README.md#autotoc_md23',1,'']]],
+  ['html_20file_3a_20c_3a_20users_20user_20airlandwordsadventure_20assets_20script_20output_20html_20classchang_20html_20details_2',['Página html &lt;a href=&quot;file:///C:/Users/User/AirlandWordsAdventure/Assets/Script/Output/html/classchang.html#details&quot;&gt;file:///C:/Users/User/AirlandWordsAdventure/Assets/Script/Output/html/classchang.html#details&lt;/a&gt;',['../C:/Users/User/AirlandWordsAdventure/Assets/Script/Scripts/README.md#autotoc_md23',1,'']]]
 ];

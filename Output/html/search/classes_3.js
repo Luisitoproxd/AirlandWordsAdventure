@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['forzarorientacionporescena_0',['ForzarOrientacionPorEscena',['../class_forzar_orientacion_por_escena.html',1,'']]]
+  ['lokme_0',['Lokme',['../class_lokme.html',1,'']]]
 ];

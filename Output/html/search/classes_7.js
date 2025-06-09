@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['quit_0',['Quit',['../class_quit.html',1,'']]]
+  ['splashc_0',['splashc',['../classsplashc.html',1,'']]]
 ];

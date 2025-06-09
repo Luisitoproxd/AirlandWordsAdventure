@@ -1,20 +1,10 @@
 var searchData=
 [
-  ['panelui_0',['panelUI',['../class_enemy.html#a6e9bc7988f3d35607951970f8a4582eb',1,'Enemy']]],
-  ['pantallanegra_1',['pantallaNegra',['../classchang.html#a2377a01ff102d5ce7d45dfbe404aac43',1,'chang']]],
-  ['paso_2',['Guía de Uso Paso a Paso',['../C:/Users/User/AirlandWordsAdventure/Assets/Script/Scripts/README.md#autotoc_md17',1,'']]],
-  ['paso_20a_20paso_3',['Guía de Uso Paso a Paso',['../C:/Users/User/AirlandWordsAdventure/Assets/Script/Scripts/README.md#autotoc_md17',1,'']]],
-  ['pc_4',['PC',['../C:/Users/User/AirlandWordsAdventure/Assets/Script/Scripts/README.md#autotoc_md12',1,'En PC'],['../C:/Users/User/AirlandWordsAdventure/Assets/Script/Scripts/README.md#autotoc_md7',1,'Requisitos técnicos (PC)']]],
-  ['play_5',['play',['../class_music1.html#a4bf1558cbb41a567e4060ed5b1aa990b',1,'Music1']]],
-  ['player_6',['player',['../class_lokme.html#af88dae14b7e345d8bf7733b5d7e686bd',1,'Lokme']]],
-  ['playmusic_7',['Playmusic',['../class_music.html#aba4cb71a5bbf36e9f416693cbc537477',1,'Music']]],
-  ['preparación_20inicial_8',['Instalación o Preparación Inicial',['../C:/Users/User/AirlandWordsAdventure/Assets/Script/Scripts/README.md#autotoc_md11',1,'']]],
-  ['presionarderecha_9',['PresionarDerecha',['../classmovement.html#a4c018de6f1c6feb5f2764379f5ec5d98',1,'movement']]],
-  ['presionarizquierda_10',['PresionarIzquierda',['../classmovement.html#a761630882cf1663940a670b947a76a16',1,'movement']]],
-  ['previos_11',['Requisitos Previos',['../C:/Users/User/AirlandWordsAdventure/Assets/Script/Scripts/README.md#autotoc_md6',1,'']]],
-  ['problemas_20faq_12',['Solución de Problemas (FAQ)',['../C:/Users/User/AirlandWordsAdventure/Assets/Script/Scripts/README.md#autotoc_md19',1,'']]],
-  ['producto_13',['Descripción General del Producto',['../C:/Users/User/AirlandWordsAdventure/Assets/Script/Scripts/README.md#autotoc_md15',1,'']]],
-  ['puntaje_14',['Puntaje',['../class_puntaje.html',1,'']]],
-  ['puntaje_2ecs_15',['Puntaje.cs',['../_puntaje_8cs.html',1,'']]],
-  ['puntos_16',['puntos',['../class_puntaje.html#a4e87b3cdebd6eaaf97cda39e3718965e',1,'Puntaje']]]
+  ['o_20actualización_0',['Mantenimiento o Actualización',['../C:/Users/User/AirlandWordsAdventure/Assets/Script/Scripts/README.md#autotoc_md21',1,'']]],
+  ['o_20preparación_20inicial_1',['Instalación o Preparación Inicial',['../C:/Users/User/AirlandWordsAdventure/Assets/Script/Scripts/README.md#autotoc_md11',1,'']]],
+  ['objetoanimado_2',['objetoAnimado',['../class_codigo.html#a4c9ea29ffd7b54dbaa9d9aef03ad95cc',1,'Codigo']]],
+  ['ocultarpanel_3',['OcultarPanel',['../class_enemy.html#ae72fc1a36c27d9766ee751ac4c048eb0',1,'Enemy']]],
+  ['oncollisionenter2d_4',['OnCollisionEnter2D',['../classdamage.html#a9bcb48696f97f33f6018e8d2e9890e50',1,'damage.OnCollisionEnter2D()'],['../classmovement.html#a57543c7d10305bcc1166182eecb7348b',1,'movement.OnCollisionEnter2D()']]],
+  ['ontriggerenter2d_5',['OnTriggerEnter2D',['../class_enemy.html#a5957e491a4f9791b3bcf0ebf25a960a8',1,'Enemy.OnTriggerEnter2D()'],['../class_triggdoor.html#ad79d1ca8884539f0e3437315218b522c',1,'Triggdoor.OnTriggerEnter2D()']]],
+  ['output_20html_20classchang_20html_20details_6',['Página html &lt;a href=&quot;file:///C:/Users/User/AirlandWordsAdventure/Assets/Script/Output/html/classchang.html#details&quot;&gt;file:///C:/Users/User/AirlandWordsAdventure/Assets/Script/Output/html/classchang.html#details&lt;/a&gt;',['../C:/Users/User/AirlandWordsAdventure/Assets/Script/Scripts/README.md#autotoc_md23',1,'']]]
 ];

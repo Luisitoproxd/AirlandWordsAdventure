@@ -3,7 +3,6 @@ var hierarchy =
     [ "MonoBehaviour", null, [
       [ "Codigo", "class_codigo.html", null ],
       [ "Enemy", "class_enemy.html", null ],
-      [ "ForzarOrientacionPorEscena", "class_forzar_orientacion_por_escena.html", null ],
       [ "Lokme", "class_lokme.html", null ],
       [ "Music", "class_music.html", null ],
       [ "Music1", "class_music1.html", null ],

@@ -4,7 +4,6 @@ var annotated_dup =
     [ "Codigo", "class_codigo.html", "class_codigo" ],
     [ "damage", "classdamage.html", "classdamage" ],
     [ "Enemy", "class_enemy.html", "class_enemy" ],
-    [ "ForzarOrientacionPorEscena", "class_forzar_orientacion_por_escena.html", "class_forzar_orientacion_por_escena" ],
     [ "Lokme", "class_lokme.html", "class_lokme" ],
     [ "movement", "classmovement.html", "classmovement" ],
     [ "Music", "class_music.html", "class_music" ],

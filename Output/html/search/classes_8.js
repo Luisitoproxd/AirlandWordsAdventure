@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['splashc_0',['splashc',['../classsplashc.html',1,'']]]
+  ['triggdoor_0',['Triggdoor',['../class_triggdoor.html',1,'']]]
 ];
