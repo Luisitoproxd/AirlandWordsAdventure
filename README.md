@@ -111,7 +111,7 @@ Asegúrate de no haberla desactivado desde la configuración.
 
 ---
 
-Página html file:///C:/Users/User/AirlandWordsAdventure/Assets/Script/Output/html/classchang.html#details
+Página html file: file:///C:/Users/User/AirlandWordsAdventure/Assets/Script/Output/html/index.html
 ---
 
 > Este proyecto fue desarrollado con fines educativos para apoyar el aprendizaje de la ortografía y comprensión lectora de estudiantes de educación básica.
