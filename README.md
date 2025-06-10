@@ -112,6 +112,11 @@ Asegúrate de no haberla desactivado desde la configuración.
 ---
 
 Página html file: file:///C:/Users/User/AirlandWordsAdventure/Assets/Script/Output/html/index.html
----
+---  
+
+#Para mas información contactar con:  
+vmonjarreth@gmail.com  
+luisfgz419@gmail.com  
+
 
 > Este proyecto fue desarrollado con fines educativos para apoyar el aprendizaje de la ortografía y comprensión lectora de estudiantes de educación básica.
