@@ -1,4 +1,5 @@
 # Manual de Usuario – Airland Word Adventure (Versión 2.0)
+![Image](https://github.com/user-attachments/assets/3e233ae5-b941-4cb7-84db-692480e35a91)
 
 **Versión:** 2.0  
 **Desarrollado por:** [Dream Team]  
